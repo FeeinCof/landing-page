@@ -1,5 +1,5 @@
 .bg-orange {
-    background-color: #f78406 !important;
+    background-color: #a35a0bfe !important;
 }
 
 .Home {
@@ -13,46 +13,19 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-image: url(../../assets/images/course_2_background.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
 }
 
 .container {
     width: 1300px;
-    height: auto;
+    /* height: auto; */
+    height: 550px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-}
-
-.overview-left {
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.overview-title {
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
-    line-height: 230%;
-    font-weight: 500;
-    color: #ffffff;
-    flex-basis: 50%;
-}
-
-.overview-title-image {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.overview-right {
-    width: 50%;
 }
 
 @media screen and (max-width: 1100px){
