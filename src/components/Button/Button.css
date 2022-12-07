@@ -21,4 +21,11 @@
     font-size: 16px;
     font-weight: 600;
     font-family: Inter, sans-serif;
+    transition: .1s ease-out transform;
+}
+
+.btn:hover {
+    opacity: .8;
+    cursor: pointer;
+    transform: translateY(-2px)
 }
