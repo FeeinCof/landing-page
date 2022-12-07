@@ -1,11 +1,12 @@
 import './Course2.css';
-
+import Button from '../Button/Button';
+import CardVideo from '../CardVideo/CardVideo';
 function Course2 (props) {
     return (
         <>
             <div className='course-2'>
                 <div className='course-content'>
-                    <div>
+                    <div className='course-left'>
                         <div className='course-content-header'>
                             <div>
                                 <div className='course-icon'></div>
@@ -15,16 +16,20 @@ function Course2 (props) {
                             </div>
                         </div>
                         <div>
-                            <span>Course last updated: Dec 5, 2022</span>
+                            <span>This course will teach you how to answer ANY interview <br/> question thrown your way</span>
                         </div>
+                            <br />
+                            <br />
+                            <br />
                         <div>
-                        <span>This course will teach you how to answer ANY interview question thrown your way</span>
-
+                            <Button color='btn-orange-light' arrowdown={true}>Explore the course</Button>
                         </div>
                     </div>
-
-                    <div>
-                        aa
+                        <br/>
+                        <br/>
+                        <br/>
+                    <div className='course-right'>
+                        <CardVideo />
                     </div>
                 </div>
             </div>

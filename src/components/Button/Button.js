@@ -1,20 +1,27 @@
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './Button.css';
-
+import arrowdownIcon from '../../assets/images/arrowdown.svg';
 function Button(props) {
-    const { color, children } = props;
+    const { color, children, arrowdown } = props;
     return (
         <>
             <button 
                 className={
                     classNames(
                         'btn',
-                        color
+                        color,
+                        {
+                            'text-lg': arrowdown
+                        }
                     )
                 }
             >
                 { children }
+                &nbsp;
+                { arrowdown && (
+                    <img className='arrowdown' src={arrowdownIcon} />
+                ) }
             </button>
         </>
     )
