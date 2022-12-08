@@ -14,6 +14,8 @@ class Home extends Component {
                         <div className='container'>
                             <Course2 />
                         </div>
+                        <div className='container'>
+                        </div>
                     </div>
                 </div>
             </>

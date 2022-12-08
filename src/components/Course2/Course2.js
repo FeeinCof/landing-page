@@ -12,11 +12,11 @@ function Course2 (props) {
                                 <div className='course-icon'></div>
                             </div>
                             <div className='course-h1'>
-                                <h1>Hacking the Product Management Inteview</h1>
+                                <h1 className='course2-context'>Hacking the Product Management Inteview</h1>
                             </div>
                         </div>
                         <div>
-                            <span>This course will teach you how to answer ANY interview <br/> question thrown your way</span>
+                            <span className='course2-context'>This course will teach you how to answer ANY interview <br/> question thrown your way</span>
                         </div>
                             <br />
                             <br />

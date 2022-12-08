@@ -10,7 +10,7 @@
     max-width: 100%;
     height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -31,7 +31,6 @@
 .container {
     width: 1300px;
     height: auto;
-    /* height: 550px; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
