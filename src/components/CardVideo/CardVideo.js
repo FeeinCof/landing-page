@@ -9,10 +9,14 @@ import lifeTimeIcon from '../../assets/images/Lifetime (Navy).svg';
 import usDollarIcon from '../../assets/images/us_dollar.svg';
 
 function CardVideo(props) {
+    let { onClick } = props;
     return (
         <>
             <div className='CardVideo'>
-                <div className='CardHeader'>
+                <div 
+                    className='CardHeader'
+                    onClick={() => onClick()}
+                >
                     <img src='https://i.ytimg.com/vi_webp/C2vU1cF-BEA/maxresdefault.webp'/>
                     <div className='CardHeader_CoverImg'>
                         <div className='button_play'>
@@ -31,10 +35,8 @@ function CardVideo(props) {
                                 <p>$430</p>
                             </div>
                             <div>
-                                <Button color="btn-orange">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <Button color="btn-orange" large>
                                     Buy now
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </Button>
                             </div>
                         </div>

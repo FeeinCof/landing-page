@@ -50,3 +50,14 @@
 .btn:hover .arrowdown {
     transform: translateY(4px);
 }
+
+.btn-lg {
+    padding: 1em 6em;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 525px){
+    .btn-lg {
+        padding: 1em 3em;
+    }
+}

@@ -3,16 +3,19 @@ import classNames from 'classnames';
 import './Button.css';
 import arrowdownIcon from '../../assets/images/arrowdown.svg';
 function Button(props) {
-    const { color, children, arrowdown } = props;
+    const { color, children, arrowdown, large } = props;
     return (
         <>
             <button 
                 className={
                     classNames(
                         'btn',
-                        color,
+                        color, 
                         {
                             'text-lg': arrowdown
+                        },
+                        {
+                            'btn-lg': large
                         }
                     )
                 }
