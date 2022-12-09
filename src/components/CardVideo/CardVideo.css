@@ -8,7 +8,8 @@
     align-items: center;
     border-radius: 12px;
     background-color: #fff;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+    box-shadow: 0 4px 20px 5px rgb(0 0 0 / 8%);
 }
 
 .CardHeader {
@@ -145,7 +146,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 2em 0;
+    padding: 1em 0;
 }
 
 .CardItem {
@@ -154,7 +155,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: .3em 0;
+    padding: .4em 0;
 }
 
 .CardItem span {
@@ -165,7 +166,7 @@
 }
 
 .HeadingItem {
-    margin-bottom: .5em;
+    margin-bottom: .3em;
 }
 
 .HeadingItem span {

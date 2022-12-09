@@ -50,7 +50,7 @@ function CardVideo(props) {
                     <div className='CardContent'>
                         <div className='CardItem HeadingItem'>
                             <img src={shieldIcon}/>
-                            <span className=''>Created by a team of nearly 2 dozen PMs from Google, Meta, Microsoft, and more</span>
+                            <span>Created by a team of nearly 2 dozen PMs from Google, Meta, Microsoft, and more</span>
                         </div>
                         <div className='CardItem'>
                             <img width={'24px'} src={timeIcon}/>

@@ -15,11 +15,17 @@
     align-items: center;
 }
 
-.container-fluid-bg-image {
-    background-image: url(../../assets/images/course_2_background.svg);
+.container-fluid-cr2-bg-image {
+    background-image: url('../../assets/images/course_2_background.svg');
     background-repeat: no-repeat;
     background-position: 100%;
     background-position-y: 0px;
+}
+
+.container-fluid-cr3-bg-image {
+    background-image: url('../../assets/images/course3_bg.svg');
+    background-position-y: -200px;
+    background-size: 100%;
 }
 
 @media screen and (max-width: 765px) {
@@ -42,4 +48,58 @@
         width: 95%;
         flex-direction: column;
     }
+}
+
+.ourMetrics_component {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourMetrics_component div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ourMetrics_component div div {
+    width: 28.88%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .ourMetrics_component div {
+        flex-direction: column;
+    }
+
+    .ourMetrics_component div div {
+        width: 60%;
+    }
+}
+
+.ourMetrics_component div div h2 {
+    margin: 4px 0;
+    margin-top: 10px;
+    font-size: 27px;
+    color: #6b3d0d;
+    font-weight: 900;
+}
+
+.ourMetrics_component div div img {
+    border-radius: 12px;
+    box-shadow: 0 4px 20px 5px rgb(0 0 0 / 8%);
+}
+
+.ourMetrics_component div div span {
+    font-size: 17px;
+    font-weight: normal;
+    color: #333333;
 }

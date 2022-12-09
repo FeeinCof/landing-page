@@ -1,7 +1,7 @@
 .course-2 {
     width: 100%;
     height: auto;
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
