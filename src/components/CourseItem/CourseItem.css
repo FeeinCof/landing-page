@@ -1,0 +1,78 @@
+.CourseItem {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 1em 0;
+    color: #5F5F57;
+    transition: .2s ease-in-out all;
+    margin-bottom: 3px;
+}
+
+.CourseItem:hover {
+    cursor: pointer;
+    background-color: #eff4f8e4;
+}
+
+.CourseItem > div {
+    width: 96%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CourseItem > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courseFree_img {
+    width: 100px;
+    height: 60px;
+    border-radius: 8px;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courseFree_img img {
+    border-radius: 8px;
+}
+
+.CourseItem_free {
+    background-color: #eff4f8;
+}
+
+.CourseItem_free > div > div:first-child {
+    font-size: 18px;
+    font-weight: 700;
+    color: #162d42;
+}
+
+.f-dx {
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-weight: bold;
+    background-color: white;
+    color: #f78306;
+}
+
+@media screen and (max-width: 525px) {
+    .CourseItem > div > div:last-child {
+        display: none;
+    }
+
+    .courseFree_img {
+        max-width: 80px !important;
+        height: 50px !important;
+        background-size: 120%;
+    }
+}

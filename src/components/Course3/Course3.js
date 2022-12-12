@@ -15,7 +15,8 @@ function Course3(props) {
                             <img width={'80%'} src={groupsLogo}/>
                         </div>
                     </div>
-                    <div className='Course3_right'></div>
+                    <div className='Course3_right'>
+                    </div>
                 </div>
             </>
         )

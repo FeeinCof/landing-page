@@ -50,6 +50,15 @@
     z-index: -1;
 }
 
+@media screen and (max-width: 1245px) {
+    .Course3_right {
+        background-attachment: scroll !important;
+        overflow: hidden;
+        background-position-y: 50%;
+        transform: scale(1);
+    }
+}
+
 @media screen and (max-width: 765px){
     .Course3 {
         flex-direction: column;

@@ -9,7 +9,6 @@
     border-radius: 12px;
     background-color: #fff;
     /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
-    box-shadow: 0 4px 20px 5px rgb(0 0 0 / 8%);
 }
 
 .CardHeader {
@@ -38,7 +37,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333;
+    /* background-color: #333; */
     opacity: .8;
     border-radius: 50%;
 }
@@ -47,8 +46,8 @@
     cursor: pointer;
 }
 
-.button_play img {
-    width: 30px;
+.button_play > img {
+    width: 80%;
     height: auto;
     margin-left: 3px;
 }
@@ -104,8 +103,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 1em 0;
 }
 
 .CardTitle > div {
@@ -115,6 +113,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .CardTitle > div p {

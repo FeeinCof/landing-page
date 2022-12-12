@@ -1,12 +1,11 @@
 .course-2 {
     width: 100%;
     height: auto;
-    height: 300px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     margin-top: 50px;
-    padding-bottom: 300px;
+    padding-bottom: 3em;
 }
 
 .course-h1 {
@@ -67,7 +66,7 @@
 @media screen and (max-width: 765px) {
     .course-2 {
         margin-top: 40px;
-        height: 750px;
+        height: auto;
     }
     .course-content {
         width: 100%;
@@ -96,7 +95,7 @@
         margin: 0 !important;
     }
     .course-right {
-        margin-top: 0;
+        transform: none;
         justify-content: center !important;
         align-items: center !important;
     }

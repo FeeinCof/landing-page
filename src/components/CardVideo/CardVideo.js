@@ -1,18 +1,24 @@
 import './CardVideo.css';
 import Button from '../Button/Button';
-import playButtonIcon from '../../assets/images/play-button-arrowhead.png';
+import playButtonIcon from '../../assets/images/playButtonCard.svg';
 import razorPayIcon from '../../assets/images/razorpay-logo.svg';
 import shieldIcon from '../../assets/images/shield_icon.svg';
 import timeIcon from '../../assets/images/Time (Navy).svg';
 import pageIcon from '../../assets/images/PageIcon.svg';
 import lifeTimeIcon from '../../assets/images/Lifetime (Navy).svg';
 import usDollarIcon from '../../assets/images/us_dollar.svg';
+import classNames from 'classnames';
 
 function CardVideo(props) {
-    let { onClick } = props;
+    let { onClick, op, shadow } = props;
     return (
         <>
-            <div className='CardVideo'>
+            <div className={classNames(
+                'CardVideo',
+                {
+                    'shadow': shadow
+                }
+            )}>
                 <div 
                     className='CardHeader'
                     onClick={() => onClick()}
@@ -46,7 +52,6 @@ function CardVideo(props) {
                             </a>
                         </div>
                     </div>
-                    < hr/>
                     <div className='CardContent'>
                         <div className='CardItem HeadingItem'>
                             <img src={shieldIcon}/>
@@ -64,10 +69,14 @@ function CardVideo(props) {
                             <img width={'24px'} src={lifeTimeIcon}/>
                             <span>Lifetime access</span>
                         </div>
-                        <div className='CardItem'>
-                            <img width={'24px'} src={usDollarIcon}/>
-                            <span>Tax-deductible expense under the US's continuing education category</span>
-                        </div>
+                        {
+                            op === '0' && (
+                                <div className='CardItem'>
+                                    <img width={'24px'} src={usDollarIcon}/>
+                                    <span>Tax-deductible expense under the US's continuing education category</span>
+                                </div>
+                            )
+                        }
                     </div>
                 </div>
             </div>

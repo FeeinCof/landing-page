@@ -26,11 +26,30 @@
     background-image: url('../../assets/images/course3_bg.svg');
     background-position-y: -200px;
     background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+.stripe-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.stripe-bg::before {
+    content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background-color: #f5f7f7;
+  transform: rotate(30deg);
 }
 
 @media screen and (max-width: 765px) {
-    .container-fluid-bg-image {
-        background-position-y: 300px !important;
+    .container-fluid-cr2-bg-image {
+        background-size: 120%;
+        background-position-y: 70% !important;
     }
 }
 
@@ -57,6 +76,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 6em;
 }
 
 .ourMetrics_component div {
@@ -102,4 +122,260 @@
     font-size: 17px;
     font-weight: normal;
     color: #333333;
+}
+
+.exploreTheCourse {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.exploreTheCourse > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+@media screen and (max-width: 992px) {
+    .exploreTheCourse > div {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.exploreTheCourse_left_component {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    margin-bottom: 1em;
+    padding-bottom: 0;
+}
+
+.exploreTheCourse_left, .exploreTheCourse_right {
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 !important;
+}
+
+@media screen and (max-width: 992px){
+    .exploreTheCourse_left {
+        width: 100%;
+    }
+}
+
+.exploreTheCourse_left {
+    flex-grow: 1;
+    height: auto;
+    justify-content: flex-start;
+}
+
+
+@media screen and (max-width: 992px) {
+    .exploreTheCourse_left {
+        flex-grow: 0;
+    }
+}
+
+.exploreTheCourse > h1 {
+    font-size: 38px;
+    color: #ad6314;
+}
+
+@media screen and (max-width: 992px) {
+    .exploreTheCourse > h1 {
+        font-size: 30px !important;
+    }
+}
+
+.exploreTheCourse_left_heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c16f17;
+    border-radius: 12px;
+    transition: .2s ease-in-out all;
+    padding: 1em 0;
+}
+
+.exploreTheCourse_left_heading:hover {
+    opacity: .8;
+}
+
+.exploreTheCourse_left_heading div {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 1em;
+}
+
+@media screen and (max-width: 992px) {
+    .exploreTheCourse_left_heading > div:first-child > span {
+        font-size: 20px !important;
+    }
+}
+
+.exploreTheCourse_left_heading > div:first-child {
+    flex-grow: 1;
+}
+
+.exploreTheCourse_left_heading > div:first-child span {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: white;
+    margin-left: 15px;
+}
+
+.exploreTheCourse_left_heading > div:last-child {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f89f41;
+    padding: .6em 0;
+    padding-bottom: 0em;
+    border-radius: 12px;
+}
+
+.exploreTheCourse_left_heading:hover {
+    cursor: pointer;
+}
+
+.exploreTheCourse_left_heading > div:last-child span {
+    color: white;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 525px) {
+    .exploreTheCourse_left_heading > div:last-child span {
+        font-size: 12px !important;
+    }
+
+    .exploreTheCourse_left_heading > div:last-child > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exploreTheCourse_left_heading > div:last-child > div > span {
+        width: 100%;
+        padding: 0 1em;
+        font-size: 10px !important;
+    }
+
+    .exploreTheCourse_left_heading > div:last-child > div > img {
+        width: 12px;
+    }
+}
+
+.exploreTheCourse_left_heading > div:last-child > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exploreTheCourse_left_heading > div:last-child > div > span {
+    font-size: 14px;
+    font-weight: light;
+}
+
+.exploreTheCourse_left_heading > div:last-child > div > img {
+    transform: translateY(1px);
+}
+
+.exploreTheCourse_left_body {
+    width: 97%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5em;
+}
+
+.exploreTheCourse_right {
+    width: 400px;
+    height: auto;
+    flex-grow: 0;
+    justify-content: flex-end;
+}
+
+.exploreTheCourse_right > div {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.exploreTheCourse_right > div > div {
+    position: unset;
+    width: 380px;
+    height: auto;
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px 5px rgb(0 0 0 / 8%);
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 992px) {
+    .exploreTheCourse_right  {
+        width: 100% !important;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .exploreTheCourse_right > div {
+        width: 100%;
+        align-items: center;
+    }
+
+    .exploreTheCourse_right > div > div:first-child {
+        display: none;
+    }
+
+    .exploreTheCourse_right > div > div {
+        width: 100%;
+    }
+}
+
+
+.exploreTheCourse_right > div > div p {
+    width: 80%;
+}
+
+.fixedBarSt1 {
+    position: fixed;
+    top: 82px;
+}
+
+.fixedBarSt2 {
+    position: absolute !important;
+    bottom: 0 !important;
+    top: unset !important;
+}
+
+@media screen and (max-width: 992px) {
+    .fixedBarSt1 {
+        position: unset !important;
+        top: unset;
+    }
 }
