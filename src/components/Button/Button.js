@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import './Button.css';
 import arrowdownIcon from '../../assets/images/arrowdown.svg';
 function Button(props) {
-    const { color, children, arrowdown, large } = props;
+    const { color, children, arrowdown, large, className } = props;
     return (
         <>
             <button 
@@ -16,7 +16,8 @@ function Button(props) {
                         },
                         {
                             'btn-lg': large
-                        }
+                        },
+                        className
                     )
                 }
             >

@@ -259,6 +259,7 @@
 .exploreTheCourse_left_heading > div:last-child span {
     color: white;
     font-size: 16px;
+    text-align: center;
 }
 
 @media screen and (max-width: 525px) {
@@ -377,5 +378,112 @@
     .fixedBarSt1 {
         position: unset !important;
         top: unset;
+    }
+}
+
+.footer {
+    height: auto;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.footer h1 {
+    font-size: 54px;
+    font-weight: bolder;
+    margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 992px) {
+    .footer h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+.footer > div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer > div > div {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1050px) {
+    .footer > div > div {
+        width: 100%;
+    }
+}
+
+.footer > div > div:first-child span {
+    text-align: start;
+    color: #838a92;
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.footer > div > div:last-child span {
+    color: #f89f41;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.footer form {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer form input {
+    width: 63%;
+    border-radius: 12px;
+    border: 1px #f89f41 solid;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 480px) {
+    .footer form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer form input {
+        width: 100%;
+        margin-bottom: .5em;
+    }
+}
+
+.footer form input::placeholder {
+    color: #838a92;
+}
+
+.footer form input, select {
+  padding: 12px 20px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.footer form input:focus {
+    outline: 3px #f8af61 solid !important;    
+}
+
+@media screen and (max-width: 1050px) {
+    .footer div{
+        flex-direction: column;
     }
 }

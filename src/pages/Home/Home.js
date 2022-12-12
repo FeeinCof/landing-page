@@ -14,7 +14,10 @@ import chevronIcon from '../../assets/images/Chevron.svg';
 import FullScreenVideo from '../../components/FullScreenVideo/FullScreenVideo';
 import giftIcon from '../../assets/images/gift.png';
 import executionIcon from '../../assets/images/Execution.png';
-import productIcon from '../../assets/images/Product.png'
+import productIcon from '../../assets/images/Product.png';
+import branchLogo from '../../assets/images/_branch_logo@1080.png';
+import Button from '../../components/Button/Button';
+
 const Home = () => {
     const [breakingScript, setbreakingScript] = useState(
         [
@@ -162,15 +165,13 @@ const Home = () => {
     const rightBarRef = useRef();
     const courseRef = useRef();
     useLayoutEffect(() => {
-      const onScroll = () => {
+        const onScroll = () => {
         const getBoundingCourseRef = courseRef.current.getBoundingClientRect();
         let rightBarH = rightBarRef.current.getBoundingClientRect().height;
         let courseH = getBoundingCourseRef.height;
         let distance = courseH - rightBarH;
         let disOfCorsToTop = getBoundingCourseRef.top - 85; // Negative to Positive
         disOfCorsToTop *= -1;
-        console.log(disOfCorsToTop);
-        console.log(distance);
         if (rightBarH > courseH) {
             rightBarRef.current.classList.remove('fixedBarSt1')
             rightBarRef.current.classList.remove('fixedBarSt2')
@@ -402,8 +403,30 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='container-fluid stripe-bg'>
-                    <div className='container'>
-                        footer
+                    <div className='container footer'>
+                        <h1>Get lifetime access. Enroll now</h1>
+                        <div>
+                            <div>
+                                <img src={branchLogo} width={'140px'}/>
+                                <span>All the tools you need to land your dream product management job at any tech company</span>
+                            </div>
+                            <div>
+                                <span>Unlock a 32-minute video lesson to learn how to answer the hardest PM interview questions for FREE!</span>
+                                <form>
+                                    <input
+                                        type={'text'}
+                                        placeholder={'Your email'}
+                                        className='shadow'
+                                    />
+                                    &nbsp;
+                                    &nbsp;
+                                    <Button class='shadow' color="btn-orange">Get Video</Button>
+                                </form>
+                                <br />
+                                <br />
+                                <br />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
