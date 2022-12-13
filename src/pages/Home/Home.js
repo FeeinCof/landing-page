@@ -408,7 +408,7 @@ const Home = () => {
                         <div>
                             <div>
                                 <img src={branchLogo} width={'140px'}/>
-                                <span>All the tools you need to land your dream product management job at any tech company</span>
+                                <span>All the tools you need to land your dream product management job at <i>any</i> tech company</span>
                             </div>
                             <div>
                                 <span>Unlock a 32-minute video lesson to learn how to answer the hardest PM interview questions for FREE!</span>
